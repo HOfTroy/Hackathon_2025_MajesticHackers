@@ -1,46 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>RMIT Dodge the Garbadge - GamePage</title>
-        <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RMIT Dodge the Garbadge - GamePage</title>
+        <style>
+            /* Insert the latest CSS from the previous step here */
             body {
                 background-color: black;
                 color: purple;
-
+                margin: 0; 
+                overflow: hidden;
             }
-        
-
             .menu-container {
-                /* background-image: url(assets/images/ocean.jpg) ;   Aqua background */
-                /* background-color: aqua; */
-                color: black;            /* Text color for readability */
-                padding: 20px;
-                margin-top: 60px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: black;
                 max-width: 600px;
-                margin-left: 27vw;
-                /*margin-right: 100px; */
-                margin-bottom: 50px;
-                 border-radius: 8px;
-                 height: 600px;
-                 background-repeat: no-repeat;
+                height: 600px;
+                width: 100%;
+                background-repeat: no-repeat;
                 background-size: cover;
-
+                border-radius: 8px;
             }
-
-            .fish{
-                position: relative;
-                left: 500px;
-                top: 500px;
-                width: 100px;
-            }
-            </style>
-    </head>
-    <body>
-        <div class = menu-container>
-            <!-- <img class = "fish" src = "assets/sprites/fish_left.png"> -->
-        </div>
-        <script src="js/game.js"></script>
-</body>
+            /* ... (rest of the styles) */
+        </style>
+    </head>
+    <body>
+                <div class = "menu-container">
+                    </div>
+        <script src="js/game.js"></script>
+    </body>
 </html>
